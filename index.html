@@ -1,0 +1,121 @@
+   <!DOCTYPE HTML>
+   <html lang="pt-br">
+   <head>
+   <title>Formulário Cadastro Cliente</title>
+   <meta charset="utf-8">
+   </head>
+    <body>
+    <header>
+    <h1>Cadastro Cliente</h1>
+<br>
+    <p>Preencha todos os campos corretamente. Atenção para os campos com preenchimento obrigatório. Caso fique em branco, não será possível o envio do formulário.</p>
+   <br>
+    </header>
+    <main>
+    <form>
+    <fieldset>
+    <legend>Dados do Cliente</legend>
+<label for="pf">Pessoa Física</label>
+<input type="radio" name="pessoa" id="pf">
+<br>
+<label for="pj">Pessoa Jurídica</label>
+<input type="radio" name="pessoa" id="pj">
+    <label for="nome">Razão Social ou nome completo *</label>
+    <input type="text" name="nome" id="nome" required>
+    <label for="nfantasia">Nome Fantasia (se empresa)</label>
+    <input type="text" name="camponomefantasia" id="fantasia">
+    <label for="cpf">CPF ou CNPJ*</label>
+    <input tipe="text" name="cpfcnpj" id="cpf" required>
+    <label for="data">Data de nascimento *</label>
+    <input type="date" name="data" id="data" required>
+    <label for="estadocivil">Estado civil:</label>
+    <select name="estadocivil"id="estadocivil">
+    <option value="00">Selecione...</option>
+     <option value="01">Solteiro (a)</option>
+    <option value="02">Casado (a)</option>
+    <option value="03">Outros</option>
+    </select>
+    <label for="cel">Celular / WhatsApp *</label>
+    <input type="tel" name="telcelular" placeholder="Informe os dígitos com o DDD:" id="cel" required>
+<label for="genero">Gênero *</label>
+<select name="Cgenero" id="genero">
+<option value="01">Selecione...</option>
+<option value="sf">Feminino</option>
+<option value="sm">Masculino</option>
+</select>
+    <fieldset>
+    <legend>Dados de Endereço</legend>
+    <label for="cep">CEP *</label>
+    <input type="text" name="cep" maxlength="8" placeholder="Informe seu CEP: incira apenas números." id="cep" required>
+    <label for="rua">Rua *</label>
+    <input type="text" name="rua" id="rua" required> <br>
+    <label for="numero">Número *</label>
+    <input type="text" name="numero" id="numero" required> <br>
+    <label for="bairro">Bairro *</label>
+    <input type="text" name="bairro" id="bairro" required> <br>
+    <label for="cidade">Cidade *</label>
+    <input type="text" name="cidade" id="cidade" required> <br>
+    <label for="estado">Estado *</label>
+    <select name="estado" id="estado"> 
+    <option>Selecione...</option>
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+    </select>
+    </fieldset>
+    <fieldset>
+    <legend>Logim</legend>
+    <label for="email">Informe seu E-mail *</label>
+    <input type="e-mail" name="email" placeholder="esample@gmail.com" id="email" required>
+    <label for="confirm">Confirme o E-mail</label>
+    <input type="email" name="email" id="confirm" required>
+    <label for="senha">Senha *</label>
+    <input type="password" name="senha" placeholder="Mínimo 8 caracteres." id="senha" required>
+    <label for="confirmsenha">Confirme a senha</label>
+    <input type="password" name="confirmsenha" id="confirmsenha" required>
+    </fieldset>
+    <label for="info">Desejo receber informações via E-mail e SMS</label>
+    <input type="checkbox" name="checkinfo" id="info" checked>
+    <br>
+    <br>
+   <input type="submit" name="enviar" onclick="pergunta1();" value="Enviar">
+    <br>
+    <br>
+    </form>
+    </main>
+    <footer>
+    <p>©2021 Desafio final Gama Academy.
+    </footer>
+
+  <script>
+  function pergunta1() {
+alert("Dados enviados com sucesso!");
+}
+  </script>
+
+    </body>
+    </html>
